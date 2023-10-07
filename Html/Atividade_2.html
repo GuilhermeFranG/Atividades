@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Landings/Img/Attorney_Logo.png" type="image/x-icon">
+    <title>Formulário - Advogados de Primeira</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body {
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            display: flex;
+            background-image: url(/Landings/Img/Tribunal.png);
+            background-repeat: no-repeat;
+        }   
+        h2, h1, p {
+            color: tan;
+            text-shadow: 1px 1px black;
+        }
+        h1 {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+        h2 {
+            margin: 2%;
+        }
+        img {
+            height: 80px;
+            width: 160px;
+            margin-bottom: 3%;
+            margin-left: 28%;
+        }
+        form {
+            width: 40%;
+            
+        }
+        fieldset {
+            background-color: brown;
+            padding: 5%;
+            border-radius: 12px;
+            margin-bottom: 3%;
+            border: 3px solid burlywood;
+        }
+        textarea {
+            margin-top: 2%;
+            width: 100%;
+            outline: none;
+        }
+        input, label, button {
+            font-weight: bolder;
+        }
+        label, button {
+            text-shadow: 1px 0px rgb(41, 41, 41);
+        }
+        input, button {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 100%;
+            outline: none;
+        }
+        input[type=checkbox] {
+            width: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Formulário de Aplicação</h1>
+        <a href="/Landings/Html/Atorney.html" title="Advogados de Primeira.com.br">
+        <img src="/Landings/Img/Attorney.png" alt="" /></a>
+        <p>Preencha os dados abaixo:</p>
+        <br>
+    </div>
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome Completo</label>
+                <input type="text" required placeholder="Seu nome completo" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <Label>Email</Label>
+                <input type="email" required placeholder="Exemplo@e-mail.com"/>
+            </div>
+            <div>
+                <label>Telefone</label>
+                <input type="tel" maxlength="15" required placeholder="(xx) xxxxx-xxxx" />
+            </div>
+        </fieldset>
+        <h2>Respostas</h2>
+        <fieldset>
+            <div>
+                <label>Sugestões</label>
+                <textarea name="questions" id="" maxlength="1000" cols="60" rows="5" placeholder="Dê alguma sugestão;"></textarea>
+            </div>
+            <div>
+                <label>Confirmar Informações</label>
+                <input type="checkbox" required />
+            </div>
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>
