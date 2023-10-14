@@ -37,11 +37,13 @@
             height: 80px;
             width: 160px;
             margin-bottom: 3%;
-            margin-left: 28%;
+            margin-left: 30%;
+        }
+        strong {
+            text-shadow: 1px 1px black;
         }
         form {
             width: 40%;
-            
         }
         fieldset {
             background-color: brown;
@@ -61,7 +63,7 @@
         label, button {
             text-shadow: 1px 0px rgb(41, 41, 41);
         }
-        input, button {
+        input, button, select {
             margin-top: 2%;
             margin-bottom: 2%;
             width: 100%;
@@ -69,6 +71,30 @@
         }
         input[type=checkbox] {
             width: 5%;
+        }
+        input[type="radio"] {
+            width: 7%;
+            margin-top: 5%;
+        }
+        input[type="date"] {
+            width: 25%;
+        }
+        button {
+            width: 50%;
+            margin-left: 120px;
+            padding: 1%;
+            border-radius: 10px;
+        }
+        button[type="reset"] {
+            font-size: 12px;
+            height: 23px;
+            width: 28%;
+            margin-left: 130pt;
+            margin-top: -1%;
+        }
+        select {
+            width: 50%;
+            margin-bottom: 5%;
         }
     </style>
 </head>
@@ -85,30 +111,57 @@
         <fieldset>
             <div>
                 <label for="Nome">Nome Completo</label>
-                <input type="text" id="name" required placeholder="Seu nome completo" />
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
             </div>
         </fieldset>
         <fieldset>
             <div>
                 <Label for="E-mail">Email</Label>
-                <input type="email" id="email" required placeholder="Exemplo@e-mail.com"/>
+                <input type="email" id="email" name="email" required placeholder="Exemplo@e-mail.com"/>
             </div>
             <div>
                 <label for="Telefone">Telefone</label>
-                <input type="tel" id="Telefone" maxlength="15" required placeholder="(xx) xxxxx-xxxx" />
+                <input type="tel" id="Telefone" name="Telefone" maxlength="15" required placeholder="(xx) xxxxx-xxxx" />
             </div>
+        </fieldset>
+        <fieldset>
+        <div>
+            <div>
+                <label for="Nascimento">Data de Nascimento</label></br>
+                <input type="date" id="Data de Nascimento" name="Data de Nascimento" required />
+            </div>
+            <label for="Cidade">Informe sua Cidade</label></br>
+            <select name="Cidade" id="Cidade" required>
+                <option>Porto Alegre</option>
+                <option>Encantado</option>
+                <option>Arroio do Meio</option>
+                <option>Bento Gonçalves</option>
+                <option>Lajeado</option>
+                <option>Muçum</option>
+            </select>
+        </div>
+        <div>
+            <label for="Cargo">Cargo de Interesse:</label></br>
+            <input type="radio" id="cargo_1" name="cargo" value="Promotor"/><strong>Promotor</strong></br>
+            <input type="radio" id="cargo_2" name="cargo" value="Defensor"/><strong>Defensor</strong>
+        </div>
         </fieldset>
         <h2>Respostas</h2>
         <fieldset>
             <div>
+                <label for="PDF">Currículo (PDF)</label>
+                <input type="file" id="PDF" name="PDF" />
+            </div>
+            <div>
                 <label for="Perguntas">Sugestões</label>
-                <textarea name="questions" id="Perguntas" maxlength="1000" cols="60" rows="5" placeholder="Dê alguma sugestão;"></textarea>
+                <textarea name="questions" id="Perguntas" maxlength="2000" cols="60" rows="7" placeholder="Dê alguma sugestão;"></textarea>
             </div>
             <div>
                 <label for="Submit">Confirmar Informações</label>
-                <input type="checkbox" id="submit" required />
+                <input type="checkbox" id="submit" name="submit" required />
             </div>
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
         </fieldset>
     </form>
     
