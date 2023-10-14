@@ -84,32 +84,31 @@
     <form>
         <fieldset>
             <div>
-                <label>Nome Completo</label>
-                <input type="text" required placeholder="Seu nome completo" />
+                <label for="Nome">Nome Completo</label>
+                <input type="text" id="name" required placeholder="Seu nome completo" />
             </div>
         </fieldset>
         <fieldset>
             <div>
-                <Label>Email</Label>
-                <input type="email" required placeholder="Exemplo@e-mail.com"/>
+                <Label for="E-mail">Email</Label>
+                <input type="email" id="email" required placeholder="Exemplo@e-mail.com"/>
             </div>
             <div>
-                <label>Telefone</label>
-                <input type="tel" maxlength="15" required placeholder="(xx) xxxxx-xxxx" />
+                <label for="Telefone">Telefone</label>
+                <input type="tel" id="Telefone" maxlength="15" required placeholder="(xx) xxxxx-xxxx" />
             </div>
         </fieldset>
         <h2>Respostas</h2>
         <fieldset>
             <div>
-                <label>Sugestões</label>
-                <textarea name="questions" maxlength="1000" cols="60" rows="5" placeholder="Dê alguma sugestão;"></textarea>
+                <label for="Perguntas">Sugestões</label>
+                <textarea name="questions" id="Perguntas" maxlength="1000" cols="60" rows="5" placeholder="Dê alguma sugestão;"></textarea>
             </div>
             <div>
-                <label>Confirmar Informações</label>
-                <input type="checkbox" required />
+                <label for="Submit">Confirmar Informações</label>
+                <input type="checkbox" id="submit" required />
             </div>
             <button type="submit">Enviar</button>
-
         </fieldset>
     </form>
     
