@@ -39,15 +39,16 @@ img {
 }
 
 strong {
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 1px 3px black;
 }
 
 form {
-    width: 40%;
+    width: 40%; 
+    color: rgb(224, 25, 25); 
 }
 
 fieldset {
-    background-color: brown;
+    backdrop-filter: blur(30px);
     padding: 5%;
     border-radius: 12px;
     margin-bottom: 3%;
@@ -86,6 +87,10 @@ input[type="radio"] {
 
 input[type="date"] {
     width: 25%;
+}
+
+label {
+    text-shadow: 1px 1px 3px black;
 }
 
 label[for="Submit"] {
