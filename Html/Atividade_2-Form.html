@@ -5,98 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../Img/Attorney_Logo.png" type="image/x-icon">
     <title>Formulário - Advogados de Primeira</title>
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-            box-sizing: border-box;
-        }
-        html {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-        body {
-            align-items: center;
-            justify-content: space-evenly;
-            flex-direction: column;
-            display: flex;
-            background-image: url(../Img/tribunal.png);
-            background-repeat: no-repeat;
-        }   
-        h2, h1, p {
-            color: tan;
-            text-shadow: 1px 1px black;
-        }
-        h1 {
-            margin-top: 2%;
-            margin-bottom: 2%;
-        }
-        h2 {
-            margin: 2%;
-        }
-        img {
-            height: 80px;
-            width: 160px;
-            margin-bottom: 3%;
-            margin-left: 30%;
-        }
-        strong {
-            text-shadow: 1px 1px black;
-        }
-        form {
-            width: 40%;
-        }
-        fieldset {
-            background-color: brown;
-            padding: 5%;
-            border-radius: 12px;
-            margin-bottom: 3%;
-            border: 3px solid burlywood;
-        }
-        textarea {
-            margin-top: 2%;
-            width: 100%;
-            outline: none;
-        }
-        input, label, button {
-            font-weight: bolder;
-        }
-        label, button {
-            text-shadow: 1px 0px rgb(41, 41, 41);
-        }
-        input, button, select {
-            margin-top: 2%;
-            margin-bottom: 2%;
-            width: 100%;
-            outline: none;
-        }
-        input[type=checkbox] {
-            width: 5%;
-        }
-        input[type="radio"] {
-            width: 7%;
-            margin-top: 5%;
-        }
-        input[type="date"] {
-            width: 25%;
-        }
-        button {
-            width: 50%;
-            margin-left: 120px;
-            padding: 1%;
-            border-radius: 10px;
-        }
-        button[type="reset"] {
-            font-size: 12px;
-            height: 23px;
-            width: 28%;
-            margin-left: 130pt;
-            margin-top: -1%;
-        }
-        select {
-            width: 50%;
-            margin-bottom: 5%;
-        }
-    </style>
+    <link rel="stylesheet" href="../Css/At_1.css">
 </head>
 
 <body>
@@ -143,7 +52,9 @@
         <div>
             <label for="Cargo">Cargo de Interesse:</label></br>
             <input type="radio" id="cargo_1" name="cargo" value="Promotor"/><strong>Promotor</strong></br>
-            <input type="radio" id="cargo_2" name="cargo" value="Defensor"/><strong>Defensor</strong>
+            <input type="radio" id="cargo_2" name="cargo" value="Defensor"/><strong>Defensor</strong></br>
+            <input type="radio" id="cargo_3" name="cargo" value="Procurador"/><strong>Procurador</strong></br>
+            <input type="radio" id="cargo_4" name="cargo" value="Juiz"/><strong>Juiz</strong>
         </div>
         </fieldset>
         <h2>Respostas</h2>
@@ -153,14 +64,14 @@
                 <input type="file" id="PDF" name="PDF" />
             </div>
             <div>
-                <label for="Perguntas">Sugestões</label>
-                <textarea name="questions" id="Perguntas" maxlength="2000" cols="60" rows="7" placeholder="Dê alguma sugestão;"></textarea>
+                <label for="Perguntas">Perguntas</label>
+                <textarea name="Perguntas" id="Perguntas" maxlength="2000" cols="60" rows="7" placeholder="Dê alguma sugestão;"></textarea>
             </div>
             <div>
-                <label for="Submit">Confirmar Informações</label>
+                <label for="Submit">Eu aceito os termos de Serviço</label>
                 <input type="checkbox" id="submit" name="submit" required />
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit">Confirmar</button>
             <button type="reset">Limpar</button>
         </fieldset>
     </form>
