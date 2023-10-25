@@ -84,9 +84,19 @@ input[type="radio"] {
     width: 7%;
     margin-top: 5%;
 }
+input[type="radio"]:hover {
+    cursor: pointer;
+}
 
 input[type="date"] {
     width: 25%;
+}
+input[type="date"]:hover {
+    cursor: pointer;
+}
+
+input[type="file"]:hover {
+    cursor: pointer;
 }
 
 label {
@@ -102,6 +112,9 @@ button {
     margin-left: 120px;
     padding: 1%;
     border-radius: 10px;
+}
+button:hover {
+    cursor: pointer;
 }
 
 button[type="reset"] {
