@@ -59,6 +59,9 @@ textarea {
     margin-top: 2%;
     width: 100%;
     outline: none;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: burlywood;
 }
 
 input, label, button {
@@ -74,15 +77,29 @@ input, button, select {
     margin-bottom: 2%;
     width: 100%;
     outline: none;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+input {
+    border: none;
+    transition: 0.2s;
+}
+input:hover {
+    outline: 2px solid;
+    outline-color: burlywood;
+    background-color: rgb(224, 25, 25);
 }
 
 input[type=checkbox] {
     width: 5%;
+    outline: none;
 }
 
 input[type="radio"] {
     width: 7%;
     margin-top: 5%;
+    outline: none;
 }
 input[type="radio"]:hover {
     cursor: pointer;
@@ -90,13 +107,29 @@ input[type="radio"]:hover {
 
 input[type="date"] {
     width: 25%;
+    padding: 6px;
+    transition: 0.2s;
 }
 input[type="date"]:hover {
     cursor: pointer;
+    background-color: rgb(224, 25, 25);
+    color: whitesmoke;
 }
 
+input[type="file"] {
+    border: 1px solid burlywood;
+    border-radius: 30px;
+    padding: 10px;
+    width: 70%;
+    transition: 0.2s;
+}
 input[type="file"]:hover {
     cursor: pointer;
+    color: whitesmoke;
+    border: none;
+}
+#file-upload-button {
+    border-radius: 10px;
 }
 
 label {
@@ -112,9 +145,14 @@ button {
     margin-left: 120px;
     padding: 1%;
     border-radius: 10px;
+    transition: 0.4s;
+    border: none;
 }
 button:hover {
     cursor: pointer;
+    background-color: rgb(224, 25, 25);
+    color: whitesmoke;
+    border: 1px solid burlywood;
 }
 
 button[type="reset"] {
@@ -128,4 +166,17 @@ button[type="reset"] {
 select {
     width: 50%;
     margin-bottom: 5%;
+    transition: 0.4s;
 }
+select:hover {
+    background-color: rgb(224, 25, 25);
+    outline: 2px solid burlywood;
+    color: whitesmoke;
+}
+
+
+
+::-webkit-input-placeholder {color: rgb(224, 25, 25);}
+:-moz-placeholder {color: rgb(224, 25, 25);}
+::-moz-placeholder {color: rgb(224, 25, 25);}
+:-ms-input-placeholder {color: rgb(224, 25, 25);}
