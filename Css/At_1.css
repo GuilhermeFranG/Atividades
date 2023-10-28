@@ -15,6 +15,7 @@ body {
     display: flex;
     background-image: url(../Img/Tribunal.png);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h2, h1, p {
