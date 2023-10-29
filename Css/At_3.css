@@ -50,7 +50,6 @@ body {
 
 .head-btn {
     transition: 0.3s linear;
-    height: 30%;
     margin-top: 4%;
     background-color: rgb(255, 255, 255);
     box-shadow: 0;
@@ -58,8 +57,12 @@ body {
     -webkit-box-shadow: 0 3px 10px 0 #3b8ed6;
     color: #0169C7;
     border: none;
+    width: 9%;
+    border-radius: 10px;
+    margin-left: 52%;
+    height: 55px;
+    font-size: 15pt;
 }
-
 .head-btn:hover {
     cursor: pointer;
     background-color: #157fdb;
@@ -68,44 +71,25 @@ body {
     border: 2px #0169C7 solid;
 }
 
-button[name="service"] {
-    width: 9%;
-    border-radius: 10px;
-    margin-left: 46%;
-    height: 55px;
-    font-size: 15pt;
-}
-
-button[name="opitions"] {
-    width: 3%;
-    height: 50px;
-    border-radius: 40%;
-    transform: rotate(90deg);
-    margin-left: 3%;
-    font-size: 18pt;
-}
-
-#header h2 {
-    transform: translateY(-10px);
-}
 
 
 
-
-#aside {
+aside {
     grid-area: menu;
     font-size: small;
     height: 0;
+    position: sticky;
+    top: 0;
 }
 
 .menu li {
-    background-image: linear-gradient(#0169C7,#034680,darkblue);
+    background-image: linear-gradient(#0169C7,lightblue);
     list-style: none;
     margin-bottom: 20px;
 }
 
 .menu li a {
-    color: white;
+    color: black;
     font-weight: bolder;
     text-decoration: none;
     padding: 10px 10px;
@@ -127,7 +111,7 @@ button[name="opitions"] {
 main {
     grid-area: main;
     background-color: rgba(255, 255, 255, 0.8);
-    height: 300pt;
+    height: 450pt;
 }
 
 .ttl-info {
