@@ -27,28 +27,24 @@
         left: 0px;
         top: 0px;
     }
-
     25% {
         background-color: yellow;
         left: 820pt;
         top: 0px;
         border-radius: 15px;
     }
-
     50% {
         background-color: pink;
         left: 820pt;
         top: 444px;
         border: 1px solid deeppink;
     }
-
     75% {
         background-color: green;
         left: 0px;
         top: 444px;
         text-shadow: 1px 1px 10px lime;
     }
-
     100% {
         background-color: red;
         left: 0px;
@@ -64,17 +60,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 90px;
     margin-bottom: 20px;
 }
 
-button {
+#for_hover {
     padding: 10px;
     width: 100px;
     transition: 0.4s;
+    cursor: pointer;
 }
-
-button:hover {
+#for_hover:hover {
     background-color: black;
     color: white;
     text-shadow: 1px 1px 4px whitesmoke;
@@ -84,8 +80,8 @@ button:hover {
     -moz-box-shadow: 0 3px 10px 0 whitesmoke;
     -webkit-box-shadow: 0 3px 10px 0 whitesmoke;
     transform: scale(1.5, 1.5);
-    cursor: pointer;
 }
+
 
 #click {
     align-items: center;
@@ -94,3 +90,20 @@ button:hover {
     justify-content: center;
 }
 
+#for_click {
+    padding: 10px;
+    width: 100px;
+    transition: 0.1s linear;
+    cursor: pointer;
+}
+#for_click:active {
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 4px whitesmoke;
+    border-radius: 14px;
+    border: 1px solid grey;
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 10px 0 whitesmoke;
+    -webkit-box-shadow: 0 3px 10px 0 whitesmoke;
+    transform: scale(1.5, 1.5);
+}
