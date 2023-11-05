@@ -1,8 +1,28 @@
 * {
     box-sizing: border-box;
     padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul {
     margin: 25px;
+}
+
+.ttl {
+    font-size: 23px;
+    margin-left: 25px;
+    margin-bottom: 5%;
+}
+
+#pronto {
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="blue" cx="7" cy="7" r="2"/></svg>');
+}
+
+#afazer {
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="red" cx="7" cy="7" r="2"/></svg>');
+}
+
+
+#filmes, #jogos {
+    float: right;
 }
