@@ -14,10 +14,10 @@
     padding-left: 40px;
     text-shadow: 1px 1px 4px whitesmoke;
     position: relative;
-    animation: At 6s cubic-bezier(0.165, 0.84, 0.44, 1) 1s infinite;
+    animation: movearound 6s cubic-bezier(0.165, 0.84, 0.44, 1) 1s infinite;
 }
 
-@keyframes At {
+@keyframes movearound {
     0% {
         background-color: blue;
         left: 0px;
@@ -25,20 +25,20 @@
     }
     25% {
         background-color: yellow;
-        left: 820pt;
+        left: 80vw;
         top: 0px;
         border-radius: 15px;
     }
     50% {
         background-color: pink;
-        left: 820pt;
-        top: 455px;
+        left: 80vw;
+        top: 72vh;
         border: 1px solid deeppink;
     }
     75% {
         background-color: green;
         left: 0px;
-        top: 455px;
+        top: 72vh;
         text-shadow: 1px 1px 10px lime;
     }
     100% {
@@ -51,13 +51,12 @@
     }
 }
 
-#hover {
+.mouse-animations {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 90px;
-    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 #for_hover {
@@ -79,12 +78,7 @@
 }
 
 
-#click {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
 
 #for_click {
     padding: 10px;
