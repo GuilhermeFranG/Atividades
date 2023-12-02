@@ -14,11 +14,7 @@
     padding-left: 40px;
     text-shadow: 1px 1px 4px whitesmoke;
     position: relative;
-    animation-name: At;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-delay: 4s;
-    animation-timing-function: ease-out;
+    animation: At 6s cubic-bezier(0.165, 0.84, 0.44, 1) 1s infinite;
 }
 
 @keyframes At {
@@ -36,13 +32,13 @@
     50% {
         background-color: pink;
         left: 820pt;
-        top: 444px;
+        top: 455px;
         border: 1px solid deeppink;
     }
     75% {
         background-color: green;
         left: 0px;
-        top: 444px;
+        top: 455px;
         text-shadow: 1px 1px 10px lime;
     }
     100% {
