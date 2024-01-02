@@ -1,28 +1,135 @@
 * {
     box-sizing: border-box;
     padding: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
 }
 
+::before {
+    content: '';
+    font-size: 35px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin: 2% 0 6vh 0;
+    color: rgb(34, 34, 34);
+    text-shadow: 1px 1px 20px grey;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 2px;
+}
+
+main {height: 100vh;}
+
 ul {
-    margin: 25px;
+    margin: 0 0 10% 6vw;
 }
 
 .ttl {
-    font-size: 23px;
-    margin-left: 25px;
-    margin-bottom: 5%;
+    font-size: 25px;
+    margin: 0 0 5vh 6px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: none;
 }
 
-#pronto {
-    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="blue" cx="7" cy="7" r="2"/></svg>');
+#tasks {
+    float: left;
+    width: 30%;
+    margin-left: 15vw;
 }
 
-#afazer {
-    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 10 10"><circle fill="red" cx="7" cy="7" r="2"/></svg>');
+.feito {list-style-image: url(../Img/ok.png);}
+
+.feito h3 {
+    color: green;
+    text-shadow: 1px 1px 8px greenyellow;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
 }
 
 
-#filmes, #jogos {
+.to_do {list-style-type: square;}
+.to_do ::marker {
+    color: red;
+    font-size: 30px;
+}
+
+.to_do h3 {
+    color: crimson;
+    text-shadow: 1px 1px 25px orangered;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+#fun {
     float: right;
+    width: 45%;
+}
+
+#fun h3 {
+    color: rgb(34, 34, 34);
+    text-shadow: 1px 1px 20px grey;
+}
+
+.jogos {list-style-type: decimal; cursor: pointer;}
+.jogos ::marker {transition: 0.4s;}
+.jogos:hover ::marker {
+    font-size: 20px;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 5px lightblue;
+}
+
+
+.filmes {list-style-type: armenian;}
+.filmes ::marker {
+    animation: colorful 7s linear 2s infinite;
+    text-shadow: 1px 1px black;
+    font-size: larger;
+}
+
+@keyframes colorful {
+    2% {
+        color: red;
+    }
+
+    5% {
+        color: orange;
+    }
+
+    10% {
+        color: yellow;
+    }
+
+    20% {
+        color: greenyellow;
+    }
+
+    35% {
+        color: green;
+    }
+
+    50% {
+        color: cyan;
+    }
+
+    65% {
+        color: blue;
+    }
+
+    80% {
+        color: deeppink;
+    }
+
+    100% {
+        color: black;
+    }
 }
