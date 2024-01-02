@@ -20,31 +20,31 @@
 @keyframes movearound {
     0% {
         background-color: blue;
-        left: 0px;
-        top: 0px;
+        left: 5px;
+        top: 5px;
     }
     25% {
         background-color: yellow;
         left: 80vw;
-        top: 0px;
+        top: 5px;
         border-radius: 15px;
     }
     50% {
         background-color: pink;
         left: 80vw;
-        top: 72vh;
+        top: 71vh;
         border: 1px solid deeppink;
     }
     75% {
         background-color: green;
-        left: 0px;
-        top: 72vh;
+        left: 5px;
+        top: 71vh;
         text-shadow: 1px 1px 10px lime;
     }
     100% {
         background-color: red;
-        left: 0px;
-        top: 0px;
+        left: 5px;
+        top: 5px;
         box-shadow: 0;
         -moz-box-shadow: 0 3px 10px 0 crimson;
         -webkit-box-shadow: 0 3px 10px 0 crimson;
