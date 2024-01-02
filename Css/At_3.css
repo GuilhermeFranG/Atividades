@@ -137,3 +137,5 @@ footer {
     color: whitesmoke;
     text-shadow: 1px 1px 3px lightslategray;
 }
+
+footer a {color: lightblue;}
