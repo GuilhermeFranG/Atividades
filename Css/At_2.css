@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -44,7 +43,7 @@ strong {
 }
 
 form {
-    width: 40%; 
+    width: 100%; 
     color: rgb(224, 25, 25); 
 }
 
@@ -120,17 +119,14 @@ input[type="date"]:hover {
 input[type="file"] {
     border: 1px solid burlywood;
     border-radius: 30px;
-    padding: 10px;
-    width: 70%;
+    padding: 13px;
+    width: 100%;
     transition: 0.2s;
 }
 input[type="file"]:hover {
     cursor: pointer;
     color: whitesmoke;
     border: none;
-}
-#file-upload-button {
-    border-radius: 10px;
 }
 
 label {
@@ -181,3 +177,19 @@ select:hover {
 :-moz-placeholder {color: rgb(224, 25, 25);}
 ::-moz-placeholder {color: rgb(224, 25, 25);}
 :-ms-input-placeholder {color: rgb(224, 25, 25);}
+
+
+
+
+a {text-decoration: none; color: lightblue;}
+
+footer {
+    margin-top: 8vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: small;
+    background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
+}

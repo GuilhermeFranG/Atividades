@@ -17,66 +17,75 @@
         <p>Preencha os dados abaixo:</p>
         <br>
     </div>
-    <form>
-        <fieldset>
-            <div>
-                <label for="Nome">Nome Completo</label>
-                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
-            </div>
-        </fieldset>
-        <fieldset>
-            <div>
-                <Label for="E-mail">Email</Label>
-                <input type="email" id="email" name="email" required placeholder="Exemplo@e-mail.com" />
-            </div>
-            <div>
-                <label for="Telefone">Telefone</label>
-                <input type="tel" id="Telefone" name="Telefone" maxlength="15" required placeholder="(xx) xxxxx-xxxx" />
-            </div>
-        </fieldset>
-        <fieldset>
-            <div>
+
+    <main>
+        <form>
+            <fieldset>
                 <div>
-                    <label for="Nascimento">Data de Nascimento</label></br>
-                    <input type="date" id="Data de Nascimento" name="Data de Nascimento" required />
+                    <label for="Nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Seu nome completo" />
                 </div>
-                <label for="Cidade">Informe sua Cidade</label></br>
-                <select name="Cidade" id="Cidade" required>
-                    <option>Porto Alegre</option>
-                    <option>Encantado</option>
-                    <option>Arroio do Meio</option>
-                    <option>Bento Gonçalves</option>
-                    <option>Lajeado</option>
-                    <option>Muçum</option>
-                </select>
-            </div>
-            <div>
-                <label for="Cargo">Cargo de Interesse:</label></br>
-                <input type="radio" id="cargo_1" name="cargo" value="Promotor" /><strong>Promotor</strong></br>
-                <input type="radio" id="cargo_2" name="cargo" value="Defensor" /><strong>Defensor</strong></br>
-                <input type="radio" id="cargo_3" name="cargo" value="Procurador" /><strong>Procurador</strong></br>
-                <input type="radio" id="cargo_4" name="cargo" value="Juiz" /><strong>Juiz</strong>
-            </div>
-        </fieldset>
-        <h2>Respostas</h2>
-        <fieldset>
-            <div>
-                <label for="PDF">Currículo (PDF)</label>
-                <input type="file" id="PDF" name="PDF" />
-            </div>
-            <div>
-                <label for="Perguntas">Perguntas :</label>
-                <textarea name="Perguntas" id="Perguntas" maxlength="2000" cols="60" rows="7"
-                    placeholder="Dê alguma sugestão;"></textarea>
-            </div>
-            <div>
-                <label for="Submit">Eu aceito os termos de Serviço</label>
-                <input type="checkbox" id="submit" name="submit" required />
-            </div>
-            <button type="submit">Confirmar</button>
-            <button type="reset">Limpar</button>
-        </fieldset>
-    </form>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <Label for="E-mail">Email</Label>
+                    <input type="email" id="email" name="email" required placeholder="Exemplo@e-mail.com" />
+                </div>
+                <div>
+                    <label for="Telefone">Telefone</label>
+                    <input type="tel" id="Telefone" name="Telefone" maxlength="15" required
+                        placeholder="(xx) xxxxx-xxxx" />
+                </div>
+            </fieldset>
+            <fieldset>
+                <div>
+                    <div>
+                        <label for="Nascimento">Data de Nascimento</label></br>
+                        <input type="date" id="Data de Nascimento" name="Data de Nascimento" required />
+                    </div>
+                    <label for="Cidade">Informe sua Cidade</label></br>
+                    <select name="Cidade" id="Cidade" required>
+                        <option>Porto Alegre</option>
+                        <option>Encantado</option>
+                        <option>Arroio do Meio</option>
+                        <option>Bento Gonçalves</option>
+                        <option>Lajeado</option>
+                        <option>Muçum</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="Cargo">Cargo de Interesse:</label></br>
+                    <input type="radio" id="cargo_1" name="cargo" value="Promotor" /><strong>Promotor</strong></br>
+                    <input type="radio" id="cargo_2" name="cargo" value="Defensor" /><strong>Defensor</strong></br>
+                    <input type="radio" id="cargo_3" name="cargo" value="Procurador" /><strong>Procurador</strong></br>
+                    <input type="radio" id="cargo_4" name="cargo" value="Juiz" /><strong>Juiz</strong>
+                </div>
+            </fieldset>
+            <h2>Respostas</h2>
+            <fieldset>
+                <div>
+                    <label for="PDF">Currículo (PDF)</label>
+                    <input type="file" id="PDF" name="PDF" />
+                </div>
+                <div>
+                    <label for="Perguntas">Perguntas :</label>
+                    <textarea name="Perguntas" id="Perguntas" maxlength="2000" cols="60" rows="7"
+                        placeholder="Dê alguma sugestão;"></textarea>
+                </div>
+                <div>
+                    <label for="Submit">Eu aceito os termos de Serviço</label>
+                    <input type="checkbox" id="submit" name="submit" required />
+                </div>
+                <button type="submit">Confirmar</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        Formulário de Aplicação &copy; <a href="../../Landings/Html/Atorney.html">Advogados de Primeira</a>,  
+        2023 <a href="https://github.com/GuilhermeFranG">Gui_FranG</a>
+    </footer>
 
 </body>
 
