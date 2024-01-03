@@ -158,6 +158,7 @@ img {margin-bottom: -4px;}
     position: absolute;
     top: 3px;
     left: 5px;
+    cursor: default;
 }
 
 /* Descrição das imagens */
