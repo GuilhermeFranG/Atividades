@@ -1,0 +1,195 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: flex;
+    background-image: url(../Img/Tribunal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2, h1, p {
+    color: tan;
+    text-shadow: 1px 1px black;
+}
+
+h1 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+h2 {
+    margin: 2%;
+}
+
+img {
+    height: 80px;
+    width: 160px;
+    margin-bottom: 3%;
+    margin-left: 30%;
+}
+
+strong {
+    text-shadow: 2px 1px 3px black;
+}
+
+form {
+    width: 100%; 
+    color: rgb(224, 25, 25); 
+}
+
+fieldset {
+    backdrop-filter: blur(30px);
+    padding: 5%;
+    border-radius: 12px;
+    margin-bottom: 3%;
+    border: 3px solid burlywood;
+}
+
+textarea {
+    margin-top: 2%;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: burlywood;
+}
+
+input, label, button {
+    font-weight: bolder;
+}
+
+label, button {
+    text-shadow: 1px 0px rgb(41, 41, 41);
+}
+
+input, button, select {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 100%;
+    outline: none;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+input {
+    border: none;
+    transition: 0.2s;
+}
+input:hover {
+    outline: 2px solid;
+    outline-color: burlywood;
+    background-color: rgb(224, 25, 25);
+}
+
+input[type=checkbox] {
+    width: 5%;
+    outline: none;
+}
+
+input[type="radio"] {
+    width: 7%;
+    margin-top: 5%;
+    outline: none;
+}
+input[type="radio"]:hover {
+    cursor: pointer;
+}
+
+input[type="date"] {
+    width: 25%;
+    padding: 6px;
+    transition: 0.2s;
+}
+input[type="date"]:hover {
+    cursor: pointer;
+    background-color: rgb(224, 25, 25);
+    color: whitesmoke;
+}
+
+input[type="file"] {
+    border: 1px solid burlywood;
+    border-radius: 30px;
+    padding: 13px;
+    width: 100%;
+    transition: 0.2s;
+}
+input[type="file"]:hover {
+    cursor: pointer;
+    color: whitesmoke;
+    border: none;
+}
+
+label {
+    text-shadow: 1px 1px 3px black;
+}
+
+label[for="Submit"] {
+    font-size: 13px;
+}
+
+button {
+    width: 50%;
+    margin-left: 120px;
+    padding: 1%;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: none;
+}
+button:hover {
+    cursor: pointer;
+    background-color: rgb(224, 25, 25);
+    color: whitesmoke;
+    border: 1px solid burlywood;
+}
+
+button[type="reset"] {
+    font-size: 12px;
+    height: 23px;
+    width: 28%;
+    margin-left: 130pt;
+    margin-top: -1%;
+}
+
+select {
+    width: 50%;
+    margin-bottom: 5%;
+    transition: 0.4s;
+}
+select:hover {
+    background-color: rgb(224, 25, 25);
+    outline: 2px solid burlywood;
+    color: whitesmoke;
+}
+
+
+
+::-webkit-input-placeholder {color: rgb(224, 25, 25);}
+:-moz-placeholder {color: rgb(224, 25, 25);}
+::-moz-placeholder {color: rgb(224, 25, 25);}
+:-ms-input-placeholder {color: rgb(224, 25, 25);}
+
+
+
+
+a {text-decoration: none; color: lightblue;}
+
+footer {
+    margin-top: 8vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: small;
+    background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
+}
