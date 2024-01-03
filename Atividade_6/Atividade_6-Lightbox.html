@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="At_6.css">
-    <link rel="shortcut icon" href="../Img/Sunset.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Img/LB_logo.png" type="image/x-icon">
     <title>Lightbox</title>
 </head>
 
 <body>
 
     <main>
+        <a href="#"><img src="../Img/Sunset.png" alt="Logo" class="logo"></a>
         <h2>Lightbox</h2>
         <div class="row">
             <div class="column">
@@ -32,6 +33,15 @@
             <div class="column">
                 <img src="../Img/espana.png" onclick="openModal();currentSlide(6)" class="shadow" />
             </div>
+            <div class="column">
+                <img src="../Img/campinas.jpg" onclick="openModal();currentSlide(7)" class="shadow" />
+            </div>
+            <div class="column">
+                <img src="../Img/lago.jpg" onclick="openModal();currentSlide(8)" class="shadow" />
+            </div>
+            <div class="column">
+                <img src="../Img/porsol.jpg" onclick="openModal();currentSlide(9)" class="shadow" />
+            </div>
         </div>
 
         <div id="myModal" class="modal">
@@ -39,39 +49,47 @@
             <div class="modal-content">
 
                 <div class="mySlides">
-                    <div class="numbertext">1 / 6</div>
+                    <div class="numbertext">1 / 9</div>
                     <img src="../Img/snow.jpg" class="showcase">
                 </div>
-
                 <div class="mySlides">
-                    <div class="numbertext">2 / 6</div>
+                    <div class="numbertext">2 / 9</div>
                     <img src="../Img/adelie.png" class="showcase">
                 </div>
-
                 <div class="mySlides">
-                    <div class="numbertext">3 / 6</div>
+                    <div class="numbertext">3 / 9</div>
                     <img src="../Img/jersey.png" class="showcase">
                 </div>
-
                 <div class="mySlides">
-                    <div class="numbertext">4 / 6</div>
+                    <div class="numbertext">4 / 9</div>
                     <img src="../Img/nature.jpg" class="showcase">
                 </div>
-
                 <div class="mySlides">
-                    <div class="numbertext">5 / 6</div>
+                    <div class="numbertext">5 / 9</div>
                     <img src="../Img/deserto.jpg" class="showcase">
                 </div>
-
                 <div class="mySlides">
-                    <div class="numbertext">6 / 6</div>
+                    <div class="numbertext">6 / 9</div>
                     <img src="../Img/espana.png" class="showcase">
                 </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 9</div>
+                    <img src="../Img/campinas.jpg" class="showcase">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 9</div>
+                    <img src="../Img/lago.jpg" class="showcase">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 9</div>
+                    <img src="../Img/porsol.jpg" class="showcase">
+                </div>
+
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-                <div class="caption-container">
+                <div class="caption-container cursor">
                     <p id="caption"></p>
                 </div>
 
@@ -91,12 +109,21 @@
                         alt="Natureza e Nascer do Sol" />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/deserto.jpg" onclick="currentSlide(5)"
-                        alt="Vale da Lua" />
+                    <img class="demo cursor" src="../Img/deserto.jpg" onclick="currentSlide(5)" alt="Vale da Lua" />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/espana.png" onclick="currentSlide(6)"
-                        alt="Savana" />
+                    <img class="demo cursor" src="../Img/espana.png" onclick="currentSlide(6)" alt="Savana" />
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../Img/campinas.jpg" onclick="currentSlide(7)"
+                        alt="Campinas Verdejantes" />
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../Img/lago.jpg" onclick="currentSlide(8)" alt="Grande Lagoa" />
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="../Img/porsol.jpg" onclick="currentSlide(9)"
+                        alt="Pôr do Sol na Praia" />
                 </div>
             </div>
         </div>
