@@ -1,0 +1,126 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+a {text-decoration: none; color: lightblue;}
+
+header {
+    border-bottom: 2px solid black;
+    box-shadow: 0 4px 6px 0 red, 0 6px 18px 0 red;
+    background-color: rgb(139, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 2px 2px 2px red;
+    font-size: 50px;
+}
+
+img {
+    max-width: 360px;
+    max-height: 360px;
+}
+
+
+
+
+main {height: 300vh;}
+
+h4 {
+    color: white;
+    text-shadow: 1px 1px 2px red;
+    font-size: 20px;
+    margin: 12px 0 12px 0;
+}
+
+.info {
+    width: 98%;
+    border-right: 8px solid red;
+    border-radius: 0 12px 5% 0px;
+}
+
+article, p { 
+    color: white;
+    font-size: 12px;
+}
+
+.price {
+    color: crimson;
+    text-shadow: 2px 1px 1px darkred;
+    font-size: 18px;
+} 
+
+.obs {
+    width: 95%;
+    color: white;
+    text-shadow: 1px 1px 2px red;
+    margin-bottom: 20px;
+}
+
+.material {
+    margin: -12px;
+    color: white;
+    text-shadow: 1px 1px 2px red;
+}
+
+button {
+    padding: 8px;
+    margin: 26px 0 0 20px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+button:hover {
+    background-color: red;
+    color: whitesmoke;
+    text-shadow: 1px 1px 4px darkred;
+    transform: scale(1.4);
+    font-weight: bold;
+}
+
+
+
+
+.card {
+    width: 92%;
+    height: 400px;
+    margin: 55px 40px 40px 60px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 6px 6px 0 red, 0 4px 4px 0 red;
+}
+
+.product {
+    float: left;
+    margin: 10px 8vw 0 3vw;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 999px;
+}
+.product:hover {
+    transform: scale(1.5);
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: small;
+    background-image: linear-gradient(#1e7af1, #0169C7, #216daf);
+}
