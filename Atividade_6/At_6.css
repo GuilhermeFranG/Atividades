@@ -10,7 +10,9 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {color: lightblue; text-decoration: none;}
+a {text-decoration: none; color: rgb(131, 224, 255);}
+
+
 
 .logo{ 
     width: 50%;
@@ -83,6 +85,7 @@ img {margin-bottom: -4px;}
     width: 32%;
 }
 
+
 /* O Modal (background) */
 .modal {
     display: none;
@@ -149,6 +152,7 @@ img {margin-bottom: -4px;}
     rgb(75, 75, 75, 0.8));
 }
 
+
 /* Texto dos números (1/9) */
 .numbertext {
     color: #f2f2f2;
@@ -185,8 +189,10 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    color: rgb(216, 245, 255);
     text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
     font-size: small;
-    background-image: linear-gradient(#1e7af1, #0169C7, #216daf);
+    background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
 }
