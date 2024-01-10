@@ -58,21 +58,22 @@ a {text-decoration: none; color: rgb(131, 224, 255);}
     }
 }
 
-.mouse-animations {
+.mouseAnimations {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
-#for_hover {
+#forhover, #foractive, #forclick {
     padding: 10px;
     width: 100px;
-    transition: 0.4s;
     cursor: pointer;
 }
-#for_hover:hover {
+
+#forhover {transition: 0.4s;}
+#forhover:hover {
     background-color: black;
     color: white;
     text-shadow: 1px 1px 4px whitesmoke;
@@ -86,13 +87,23 @@ a {text-decoration: none; color: rgb(131, 224, 255);}
 
 
 
-#for_click {
-    padding: 10px;
-    width: 100px;
-    transition: 0.1s linear;
-    cursor: pointer;
+#foractive {transition: 0.2s linear;}
+#foractive:active {
+    background-color: black;
+    color: white;
+    text-shadow: 1px 1px 4px whitesmoke;
+    border-radius: 14px;
+    border: 1px solid grey;
+    box-shadow: 0;
+    -moz-box-shadow: 0 3px 10px 0 whitesmoke;
+    -webkit-box-shadow: 0 3px 10px 0 whitesmoke;
+    transform: scale(1.5, 1.5);
 }
-#for_click:active {
+
+
+
+#forclick {transition: 0.2s linear;}
+#forclick:active, #forclick.active {
     background-color: black;
     color: white;
     text-shadow: 1px 1px 4px whitesmoke;

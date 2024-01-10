@@ -14,17 +14,38 @@
         <div id="Animation">
             <h1>Animation</h1>
         </div>
-        <div class="mouse-animations">
-            <button id="for_hover">Hover</button>
+        <div class="mouseAnimations">
+            <button id="forhover">Hover</button>
         </div>
-        <div class="mouse-animations">
-            <button id="for_click">Click</button>
+        <div class="mouseAnimations">
+            <button id="foractive">Active</button>
+        </div>
+        <div class="mouseAnimations">
+            <button id="forclick">Click</button>
         </div>
     </main>
 
     <footer>
         Animations &copy; 2023, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a>
     </footer>
+
+    <script>
+
+        const forclick = document.getElementById('forclick');
+
+        forclick.addEventListener('click', function () {
+            isClicked = !isClicked;
+
+            if (isClicked) {
+                forclick.classList.add('active');
+            } else {
+                forclick.classList.remove('active');
+            }
+        });
+
+        let isClicked = false;
+
+    </script>
 
 </body>
 
