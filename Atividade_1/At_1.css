@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: gray;
-}
+
+
+body {background-color: gray;}
+
+a {text-decoration: none; color: rgb(131, 224, 255);}
 
 img {
     width: 15px;
@@ -14,15 +16,14 @@ img {
     margin-right: 10px;
 }
 
+
+
 main {
     width: 100%;
     font-size: smaller;
 }
 
-.menu {
-    list-style: none;
-    float: left;
-}
+.menu {list-style: none; float: left;}
 
 .menu li {
     height: 27px;
@@ -76,13 +77,13 @@ main {
 
 
 
-a {text-decoration: none; color: lightblue;}
-
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: rgb(216, 245, 255);
     text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
     font-size: small;
     background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
