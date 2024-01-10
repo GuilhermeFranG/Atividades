@@ -18,7 +18,7 @@
 
     <main>
         <h2>Computadores</h2>
-        <table>
+        <table id="Computador">
             <thead>
                 <th>Marca</th>
                 <th>Modelo</th>
@@ -59,7 +59,7 @@
                 <td>512GB SSD</td>
                 <td>Apple M1 GPU</td>
             </tr>
-            <tr class="linha_5">
+            <tr class="linha_5 hidden1">
                 <td class="marca">Asus</td>
                 <td>ROG Strix G15</td>
                 <td>AMD Ryzen 9</td>
@@ -67,17 +67,7 @@
                 <td>1TB SSD</td>
                 <td>Nvidia RTX 3080</td>
             </tr>
-        </table>
-        <table class="hidden">
-            <thead>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Processador</th>
-                <th>RAM</th>
-                <th>Armazenamento</th>
-                <th>Placa de Vídeo</th>
-            </thead>
-            <tr class="linha_6">
+            <tr class="linha_6 hidden1">
                 <td class="marca">Acer</td>
                 <td>Aspire 5</td>
                 <td>Intel Core i5</td>
@@ -85,7 +75,7 @@
                 <td>512GB SSD</td>
                 <td>Intel UHD</td>
             </tr>
-            <tr class="linha_7">
+            <tr class="linha_7 hidden1">
                 <td class="marca">MSI</td>
                 <td>Prestige 14</td>
                 <td>Intel i7</td>
@@ -93,7 +83,7 @@
                 <td>1TB NVMe SSD</td>
                 <td>Nvidia GTX 1650</td>
             </tr>
-            <tr class="linha_8">
+            <tr class="linha_8 hidden1">
                 <td class="marca">Gigabyte</td>
                 <td>Aero 15</td>
                 <td>Intel i7</td>
@@ -101,7 +91,7 @@
                 <td>1TB SSD</td>
                 <td>Nvidia RTX 3070</td>
             </tr>
-            <tr class="linha_9">
+            <tr class="linha_9 hidden1">
                 <td class="marca">Razer</td>
                 <td>Blade 15</td>
                 <td>Intel i7</td>
@@ -109,7 +99,7 @@
                 <td>512GB SSD</td>
                 <td>Nvidia RTX 3060</td>
             </tr>
-            <tr class="linha_10">
+            <tr class="linha_10 hidden1">
                 <td class="marca">Microsoft</td>
                 <td>Surface Laptop 4</td>
                 <td>AMD Ryzen 5</td>
@@ -118,9 +108,10 @@
                 <td>AMD Radeon</td>
             </tr>
         </table>
+        <a><button id="showMoreBtn1">Veja Mais</button></a>
 
         <h2>Monitores</h2>
-        <table>
+        <table id="Monitor">
             <thead>
                 <th>Monitor</th>
                 <th>Modelo</th>
@@ -156,51 +147,42 @@
                 <td>60Hz</td>
                 <td>IPS</td>
             </tr>
-            <tr class="linha_5">
+            <tr class="linha_5 hidden2">
                 <td class="marca">Asus</td>
                 <td>VG248QE</td>
                 <td>1920x1080</td>
                 <td>144Hz</td>
                 <td>TN</td>
             </tr>
-        </table>
-        <table class="hidden">
-            <thead>
-                <th>Monitor</th>
-                <th>Modelo</th>
-                <th>Resolução</th>
-                <th>Taxa de Atualização</th>
-                <th>Tipo de Painel</th>
-            </thead>
-            <tr class="linha_6">
+            <tr class="linha_6 hidden2">
                 <td class="marca">Acer</td>
                 <td>SB220Q</td>
                 <td>1920x1080</td>
                 <td>75Hz</td>
                 <td>IPS</td>
             </tr>
-            <tr class="linha_7">
+            <tr class="linha_7 hidden2">
                 <td class="marca">MSI</td>
                 <td>Optix G241</td>
                 <td>1920x1080</td>
                 <td>144Hz</td>
                 <td>IPS</td>
             </tr>
-            <tr class="linha_8">
+            <tr class="linha_8 hidden2">
                 <td class="marca">Gigabyte</td>
                 <td>AORUS FI27Q-X</td>
                 <td>2560x1440</td>
                 <td>165Hz</td>
                 <td>IPS</td>
             </tr>
-            <tr class="linha_9">
+            <tr class="linha_9 hidden2">
                 <td class="marca">Razer</td>
                 <td>Raptor 27</td>
                 <td>2560x1440</td>
                 <td>144Hz</td>
                 <td>IPS</td>
             </tr>
-            <tr class="linha_10">
+            <tr class="linha_10 hidden2">
                 <td class="marca">Microsoft</td>
                 <td>Surface Monitor</td>
                 <td>2560x1440</td>
@@ -208,7 +190,7 @@
                 <td>IPS</td>
             </tr>
         </table>
-        <a href="#"><button id="showMoreBtn">Veja Mais</button></a>
+        <a><button id="showMoreBtn2">Veja Mais</button></a>
     </main>
 
 
@@ -219,25 +201,48 @@
 
     <script>
 
-        const showMoreBtn = document.getElementById('showMoreBtn');
-        const hiddenFeatures = document.querySelectorAll('.hidden');
+        const showMoreBtn1 = document.getElementById('showMoreBtn1');
+        const hiddenComputador = document.querySelectorAll('.hidden1');
 
-        showMoreBtn.addEventListener('click', function () {
-            hiddenFeatures.forEach(feature => {
-                feature.classList.remove('hidden');
+        showMoreBtn1.addEventListener('click', function () {
+            hiddenComputador.forEach(Computador => {
+                Computador.classList.remove('hidden1');
             });
         });
 
         let isExpanded = false;
 
-        showMoreBtn.addEventListener('click', function () {
-            hiddenFeatures.forEach(feature => {
+        showMoreBtn1.addEventListener('click', function () {
+            hiddenComputador.forEach(Computador => {
                 if (!isExpanded) {
-                    feature.classList.remove('hidden');
-                    showMoreBtn.textContent = 'Fechar';
+                    Computador.classList.remove('hidden1');
+                    showMoreBtn1.textContent = 'Fechar';
                 } else {
-                    feature.classList.add('hidden');
-                    showMoreBtn.textContent = 'Veja Mais';
+                    Computador.classList.add('hidden1');
+                    showMoreBtn1.textContent = 'Veja Mais';
+                }
+            });
+
+            isExpanded = !isExpanded;
+        });
+
+        const showMoreBtn2 = document.getElementById('showMoreBtn2');
+        const hiddenMonitor = document.querySelectorAll('.hidden2');
+
+        showMoreBtn2.addEventListener('click', function () {
+            hiddenMonitor.forEach(Monitor => {
+                Monitor.classList.remove('hidden2');
+            });
+        });
+
+        showMoreBtn2.addEventListener('click', function () {
+            hiddenMonitor.forEach(Monitor => {
+                if (!isExpanded) {
+                    Monitor.classList.remove('hidden2');
+                    showMoreBtn2.textContent = 'Fechar';
+                } else {
+                    Monitor.classList.add('hidden2');
+                    showMoreBtn2.textContent = 'Veja Mais';
                 }
             });
 
