@@ -6,7 +6,17 @@
 
 
 
-body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: background 6s ease-in-out 0s infinite;    
+    background-color: grey;
+}
+@keyframes background {
+    0% {background-color: grey;}
+    40% {background-color: black;}
+    75% {background-color: darkred;}
+    100% {background-color: grey;}
+}
 
 a {text-decoration: none; color: rgb(131, 224, 255);}
 
@@ -20,7 +30,7 @@ img {
 header {
     border-bottom: 2px solid black;
     box-shadow: 0 4px 6px 0 red, 0 6px 18px 0 red;
-    background-color: rgb(139, 0, 0, 0.5);
+    background-image: linear-gradient(to left,rgb(139, 0, 0, 0.5),rgb(223, 21, 21),rgb(139,0,0,0.5));
 }
 
 h1 {
@@ -97,7 +107,7 @@ button:hover {
     width: 92%;
     height: 400px;
     margin: 55px 40px 40px 60px;
-    background-color: black;
+    background-image: linear-gradient(to top right, red,rgb(36, 0, 0),black,rgb(36, 0, 0),red);
     padding: 10px;
     border-radius: 8px;
     box-shadow: 0 6px 6px 0 red, 0 4px 4px 0 red;
@@ -129,5 +139,5 @@ footer {
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
     font-size: small;
-    background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
 }
