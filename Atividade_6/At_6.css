@@ -6,11 +6,15 @@
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
 ::-webkit-scrollbar {display: none;}
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
 a {text-decoration: none; color: rgb(131, 224, 255);}
+
+.hidden {display: none;}
 
 
 
@@ -163,7 +167,11 @@ img {margin-bottom: -4px;}
     top: 3px;
     left: 5px;
     cursor: default;
+    text-shadow: 2px 3px 3px black;
 }
+
+
+
 
 /* Descrição das imagens */
 .caption-container {
@@ -175,11 +183,30 @@ img {margin-bottom: -4px;}
     color: white;
     transition: 0.4s linear;
     margin-bottom: 2vh;
+    cursor: default;
 }
-.caption-container:hover {
+
+/*Botão de descrição*/
+.icon-container {
+    position: absolute;
+    top: 12vh;
+    right: 7vw;
+    z-index: 1;
+    font-size: 24px;
+    cursor: pointer;
     color: whitesmoke;
-    background-color: rgba(0, 0, 0, 0.91);
+    filter: drop-shadow(2px 4px 3px black);
 }
+.icon-container svg {width: 30px; height: 30px; color: white;}
+
+#imageDescription {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-top: 6px;
+    text-align: center;
+}
+
 
 
 

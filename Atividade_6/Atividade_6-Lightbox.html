@@ -46,6 +46,11 @@
 
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleDescription() "fill="currentColor" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z" />
+                </svg>
+            </div>
             <div class="modal-content">
 
                 <div class="mySlides">
@@ -91,45 +96,70 @@
 
                 <div class="caption-container cursor">
                     <p id="caption"></p>
+                    <p id="imageDescription"></p>
                 </div>
 
 
                 <div class="column">
-                    <img class="demo cursor" src="../Img/snow.jpg" onclick="currentSlide(1)"
-                        alt="Montanhas e Fiordes" />
+                    <img class="demo cursor" src="../Img/snow.jpg" onclick="currentSlide(1)" alt="Montanhas e Fiordes"
+                        data-description="Explorando as majestosas montanhas 
+                        cobertas de neve. Um cenário tranquilo, onde a pureza da neve reflete a luz do sol. 
+                        Desfrute da serenidade deste ambiente gélido, onde cada flocos de neve conta uma história 
+                        única." />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/adelie.png" onclick="currentSlide(2)" alt="Neve" />
+                    <img class="demo cursor" src="../Img/adelie.png" onclick="currentSlide(2)" alt="Neve"
+                        data-description="Admire a beleza do pinguim de Adélia em seu habitat natural. 
+                    Estes pássaros encantadores são conhecidos por suas características distintas e suas interações 
+                    sociais. Uma imagem que captura a essência da vida selvagem." />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/jersey.png" onclick="currentSlide(3)" alt="Aurora Boreal" />
+                    <img class="demo cursor" src="../Img/jersey.png" onclick="currentSlide(3)" alt="Aurora Boreal"
+                        data-description="Uma visão deslumbrante da aurora boreal sobre os céus 
+                    noturnos da Ilha de Jersey. As cores vibrantes e dançantes no céu criam um espetáculo celestial 
+                    único e memorável." />
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="../Img/nature.jpg" onclick="currentSlide(4)"
-                        alt="Natureza e Nascer do Sol" />
+                        alt="Natureza e Nascer do Sol" data-description="A beleza da natureza capturada no nascer do 
+                        sol. Uma paisagem tranquila e serena, onde as cores quentes do amanhecer pintam o horizonte, 
+                        criando um cenário impressionante." />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/deserto.jpg" onclick="currentSlide(5)" alt="Vale da Lua" />
+                    <img class="demo cursor" src="../Img/deserto.jpg" onclick="currentSlide(5)" alt="Vale da Lua"
+                        data-description="Explorando o Vale da Lua no deserto. Uma paisagem surreal 
+                    que se assemelha a um cenário lunar, com formações rochosas únicas e uma atmosfera que evoca um 
+                    sentimento de outro mundo." />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/espana.png" onclick="currentSlide(6)" alt="Savana" />
+                    <img class="demo cursor" src="../Img/espana.png" onclick="currentSlide(6)" alt="Savana"
+                        data-description="A Savana espanhola capturada em toda a sua glória. Esta imagem 
+                    revela a vastidão da paisagem e a diversidade da vida selvagem que habita essa região única." />
                 </div>
                 <div class="column">
                     <img class="demo cursor" src="../Img/campinas.jpg" onclick="currentSlide(7)"
-                        alt="Campinas Verdejantes" />
+                        alt="Campinas Verdejantes" data-description="Vista aérea das campinas verdejantes. 
+                        Um panorama exuberante que exibe a beleza da natureza em sua forma mais tranquila e 
+                        intocada." />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/lago.jpg" onclick="currentSlide(8)" alt="Grande Lagoa" />
+                    <img class="demo cursor" src="../Img/lago.jpg" onclick="currentSlide(8)" alt="Grande Lagoa"
+                        data-description="Reflexos serenos em uma grande lagoa. 
+                    A imagem retrata a calma da água e as paisagens circundantes, criando uma 
+                    atmosfera pacífica e relaxante." />
                 </div>
                 <div class="column">
-                    <img class="demo cursor" src="../Img/porsol.jpg" onclick="currentSlide(9)"
-                        alt="Pôr do Sol na Praia" />
+                    <img class="demo cursor" src="../Img/porsol.jpg" onclick="currentSlide(9)" alt="Pôr do Sol na Praia"
+                        data-description="O Pôr do sol pitoresco em uma praia tropical. As cores quentes do sol 
+                        mergulhando no horizonte criam uma cena romântica e memorável." />
                 </div>
             </div>
         </div>
     </main>
 
+
     <script src="AT6.js"></script>
+
 
     <footer>
         Lightbox &copy; 2024, <a href="https://github.com/GuilhermeFranG">Gui_FranG</a>
