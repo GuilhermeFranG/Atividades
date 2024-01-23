@@ -6,7 +6,12 @@
 
 
 
-body {background-color: gray;}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: wheat;
+}
 
 a {text-decoration: none; color: rgb(131, 224, 255);}
 
@@ -18,19 +23,37 @@ img {
 
 
 
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    text-shadow: 1px 1px 10px maroon;
+    margin: 2vh 0 2vh;
+    padding: 2vh 0 2vh;
+}
+
+header {background-image: linear-gradient(to left, rgb(71, 55, 55),rgb(163, 127, 127),rgb(71, 55, 55));}
+
+
+
 main {
     width: 100%;
     font-size: smaller;
+    background-color: wheat;
 }
 
 .menu {list-style: none; float: left;}
 
 .menu li {
     height: 27px;
-    background-image: linear-gradient(grey, rgb(50, 50, 50));
+    background-image: linear-gradient(to top right, grey, rgb(105, 82, 82)
+    ,rgb(102, 52, 52), maroon);
     position: relative;
     float: left;
-    border-right: 1px solid whitesmoke;
+    border-right: 1px solid maroon;
     padding-top: 2px;
     width: 339px;
 }
@@ -46,29 +69,27 @@ main {
 
 .menu li a:hover {
     color: whitesmoke;
-    box-shadow: 0;
-    -moz-box-shadow: 0 3px 10px 0 whitesmoke;
-    -webkit-box-shadow: 0 3px 10px 0 whitesmoke;
-    text-shadow: 0px 0px 5px whitesmoke;
+    box-shadow: 0px 1px 2px 0px maroon, 0px 1px 2px 0px maroon;
+    filter: drop-shadow(0px 2px 10px maroon);
 }
 
 .menu li ul {
     position: absolute;
-    top: 25px;
+    top: 28px;
     left: 0;
     display: none;
     width: 100%;
 }
-
 .menu li:hover ul{
     display: block;
-    background-image: linear-gradient(grey, rgb(50, 50, 50));
+    position: absolute;
+    z-index: 1;
     height: 40px;
 }
 
 .menu li ul li {
     height: 28px;
-    background-image: linear-gradient(grey, rgb(50, 50, 50));
+    background-image: linear-gradient(to top right, grey, rgb(105, 82, 82),rgb(102, 52, 52), maroon);
     border: 1px solid whitesmoke;
     display: block;
     width: 100%;
@@ -86,5 +107,5 @@ footer {
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
     font-size: small;
-    background-image: linear-gradient(#1e7af1,#0169C7,#216daf);
+    background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
 }
