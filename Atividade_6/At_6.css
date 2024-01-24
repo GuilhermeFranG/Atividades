@@ -207,6 +207,17 @@ img {margin-bottom: -4px;}
     text-align: center;
 }
 
+.mic-container {
+    position: absolute;
+    top: 70vh;
+    left: 7vw;
+    z-index: 1;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+.mic-container svg {width: 10px; height: 10px;}
+
 
 
 
