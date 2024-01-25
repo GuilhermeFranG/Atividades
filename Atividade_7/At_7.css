@@ -25,6 +25,8 @@ img {
     max-height: 360px;
 }
 
+.hidden {display: none;}
+
 
 
 header {
@@ -52,11 +54,9 @@ h4 {
     margin: 12px 0 12px 0;
 }
 
-.info {
-    width: 98%;
-    border-right: 8px solid red;
-    border-radius: 0 12px 5% 0px;
-}
+.info {width: 98%;}
+
+.content {border-right: 8px solid red; border-radius: 0 12px 5% 0px; width: 98%;}
 
 article, p { 
     color: white;
@@ -86,7 +86,7 @@ article, p {
 
 button {
     padding: 8px;
-    margin: 35px 0 0 20px;
+    margin: 35px 0 0px 22px;
     border-radius: 10px;
     border: none;
     transition: 0.4s;
@@ -131,6 +131,7 @@ button:hover {
 
 
 footer {
+    padding: 2vh 0 2vh;
     position: relative;
     bottom: 0;
     width: 100%;
