@@ -11,9 +11,20 @@
 
 <body>
 
-    <main>
+    <header>
         <a href="#"><img src="../Img/Sunset.png" alt="Logo" class="logo"></a>
         <h2>Lightbox</h2>
+        <div class="mic-container">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="openModal();currentSlide(10)" fill="currentColor"
+                class="bi bi-mic" viewBox="0 0 16 16">
+                <path
+                    d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
+                <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3" />
+            </svg>
+        </div>
+    </header>
+
+    <main>
         <div class="row">
             <div class="column">
                 <img src="../Img/snow.jpg" onclick="openModal();currentSlide(1)" class="shadow" />
@@ -51,14 +62,6 @@
                     class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
                     <path
                         d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1z" />
-                </svg>
-            </div>
-            <div class="mic-container">
-                <svg xmlns="http://www.w3.org/2000/svg" onclick="currentSlide(10)" fill="currentColor" class="bi bi-mic"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5" />
-                    <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3" />
                 </svg>
             </div>
             <div class="modal-content">
@@ -169,7 +172,13 @@
                 </div>
                 <div class="column">
                     <img src="../img/never-gonna-give-you.gif" alt="YOU GOT RICK ROLLED" class="demo hidden"
-                        data-description="Never gonna give you up, never gonna say good bye...">
+                        data-description="
+                        Never gonna give you up, 
+                        Never gonna let you down,
+                        Never gonna run around and desert you,
+                        Never gonna make you cry,
+                        Never gonna say goodbye,
+                        Never gonna tell a lie and hurt you." />
                 </div>
             </div>
         </div>

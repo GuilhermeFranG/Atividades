@@ -18,6 +18,8 @@ a {text-decoration: none; color: rgb(131, 224, 255);}
 
 
 
+header {background-image: linear-gradient(to right,#001c40 5%,#ff9001 50%,#ff7a01,#ff6800,#fb5705);}
+
 .logo{ 
     width: 50%;
     height: 300px;
@@ -209,12 +211,12 @@ img {margin-bottom: -4px;}
 
 .mic-container {
     position: absolute;
-    top: 70vh;
-    left: 7vw;
-    z-index: 1;
+    top: 42vh;
+    left: 45vw;
+    z-index: 3;
     font-size: 24px;
     cursor: pointer;
-    color: white;
+    color: rgb(100, 100, 100);
 }
 .mic-container svg {width: 10px; height: 10px;}
 
@@ -222,7 +224,7 @@ img {margin-bottom: -4px;}
 
 
 footer {
-    padding: 2px;
+    padding: 2vh 0 2vh;
     margin-top: 8vh;
     position: relative;
     bottom: 0;
