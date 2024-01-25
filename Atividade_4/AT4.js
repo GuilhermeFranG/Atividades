@@ -17,14 +17,15 @@ forclick.addEventListener('click', function () {
 });
 
 Animation.addEventListener('click', function () {
-    isClicked = !isClicked;
+    isClicked = true;
 
     if (isClicked) {
     messageElement.style.display = 'none';
-    Animation.classList.add('active');}
+    Animation.classList.add('active');
 
     setTimeout(() => {
-        Animation.classList.remove('active');}, 7550);
+        Animation.classList.remove('active');}, 8000);
+    }
 })
 
 let isClicked = false;

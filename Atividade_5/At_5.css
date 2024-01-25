@@ -14,7 +14,7 @@ a {text-decoration: none; color: rgb(131, 224, 255);}
 
 h1 {
     text-align: center;
-    margin: 2% 0 6vh 0;
+    margin: 4% 0 15vh 0;
     color: rgb(34, 34, 34);
     text-shadow: 1px 1px 20px grey;
     text-decoration: underline;
@@ -116,6 +116,7 @@ li::before {
 
 
 footer {
+    padding: 2vh 0 2vh;
     position: relative;
     bottom: 0;
     width: 100%;
