@@ -7,11 +7,12 @@ showMoreBtn1.addEventListener('click', function () {
     });
 });
 
-let isExpanded = false;
+let isExpandedPc = false;
+let isExpandedMonitor = false;
 
 showMoreBtn1.addEventListener('click', function () {
     hiddenComputador.forEach(Computador => {
-        if (!isExpanded) {
+        if (!isExpandedPc) {
             Computador.classList.remove('hidden1');
             showMoreBtn1.textContent = 'Fechar';
         } else {
@@ -20,7 +21,7 @@ showMoreBtn1.addEventListener('click', function () {
         }
     });
 
-    isExpanded = !isExpanded;
+    isExpandedPc = !isExpandedPc;
 });
 
 const showMoreBtn2 = document.getElementById('showMoreBtn2');
@@ -34,7 +35,7 @@ showMoreBtn2.addEventListener('click', function () {
 
 showMoreBtn2.addEventListener('click', function () {
     hiddenMonitor.forEach(Monitor => {
-        if (!isExpanded) {
+        if (!isExpandedMonitor) {
             Monitor.classList.remove('hidden2');
             showMoreBtn2.textContent = 'Fechar';
         } else {
@@ -43,5 +44,5 @@ showMoreBtn2.addEventListener('click', function () {
         }
     });
 
-    isExpanded = !isExpanded;
+    isExpandedMonitor = !isExpandedMonitor;
 });

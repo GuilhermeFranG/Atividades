@@ -8,8 +8,6 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; color: rgb(131, 224, 255);}
-
 
 
 header {
@@ -103,7 +101,7 @@ tr:hover {opacity: 0.888;}
 
 
 footer {
-    padding: 2vh 0 2vh;
+    padding: 1vh 0 1vh;
     margin-top: 10vh;
     position: relative;
     bottom: 0;
@@ -112,6 +110,10 @@ footer {
     text-align: center;
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
-    font-size: small;
+    font-size: x-small;
     background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }
