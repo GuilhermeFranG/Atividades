@@ -12,8 +12,6 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; color: rgb(131, 224, 255);}
-
 .hidden {display: none;}
 
 
@@ -212,8 +210,8 @@ img {margin-bottom: -4px;}
 .mic-container {
     position: absolute;
     top: 42vh;
-    left: 45vw;
-    z-index: 3;
+    left: 50vw;
+    z-index: 1;
     font-size: 24px;
     cursor: pointer;
     color: rgb(100, 100, 100);
@@ -224,8 +222,7 @@ img {margin-bottom: -4px;}
 
 
 footer {
-    padding: 2vh 0 2vh;
-    margin-top: 8vh;
+    text-shadow: 1px 2px 2px darkblue;padding: 1vh 0 1vh;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -233,6 +230,10 @@ footer {
     text-align: center;
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
-    font-size: small;
+    font-size: x-small;
     background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }

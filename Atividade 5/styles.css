@@ -8,8 +8,6 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: whitesmoke;}
 
-a {text-decoration: none; color: rgb(131, 224, 255);}
-
 
 
 h1 {
@@ -50,22 +48,22 @@ li::before {
 
 .feito h3 {
     color: green;
-    text-shadow: 1px 1px 8px greenyellow;
+    text-shadow: 2px 0px 1em greenyellow;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
 }
 
 
-.to_do {list-style-type: square;}
-.to_do ::marker {
+.toDo {list-style-type: square;}
+.toDo ::marker {
     color: red;
     font-size: 30px;
 }
 
-.to_do h3 {
+.toDo h3 {
     color: crimson;
-    text-shadow: 1px 1px 25px orangered;
+    text-shadow: 2px 0px 1em orangered;
     text-decoration: underline;
     text-underline-offset: 3px;
     text-decoration-thickness: 2px;
@@ -80,7 +78,7 @@ li::before {
 
 #fun h3 {
     color: rgb(34, 34, 34);
-    text-shadow: 1px 1px 20px grey;
+    text-shadow: 2px 0px 1em grey;
 }
 
 .jogos {list-style-type: decimal; cursor: pointer;}
@@ -116,7 +114,7 @@ li::before {
 
 
 footer {
-    padding: 2vh 0 2vh;
+    text-shadow: 1px 2px 2px darkblue;padding: 1vh 0 1vh;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -124,6 +122,10 @@ footer {
     text-align: center;
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
-    font-size: small;
+    font-size: x-small;
     background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }
