@@ -132,17 +132,19 @@ main {
 
 
 footer {
-    padding: 2vh 0  2vh;
     grid-area: footer;
+    text-shadow: 1px 2px 2px darkblue;padding: 1vh 0 1vh;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: rgb(216, 245, 255);
     text-align: center;
+    text-shadow: 1px 2px 2px darkblue;
+    font-weight: bolder;
     font-size: x-small;
     background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
-    color: rgb(216, 245, 255);
-    text-shadow: 1px 2px 2px darkblue;
 }
-
 footer a {
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
+    text-decoration: none; 
     color: rgb(131, 224, 255);
 }

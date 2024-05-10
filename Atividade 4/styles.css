@@ -8,8 +8,6 @@
 
 body {font-family: Verdana, Geneva, Tahoma, sans-serif;}
 
-a {text-decoration: none; color: rgb(131, 224, 255);}
-
 
 
 #Animation {
@@ -103,15 +101,19 @@ a {text-decoration: none; color: rgb(131, 224, 255);}
 
 
 footer {
-    padding: 2vh 0 2vh;
+    text-shadow: 1px 2px 2px darkblue;padding: 1vh 0 1vh;
     position: absolute;
     bottom: 0;
-    border-radius: 0 8px 0 0;
     width: 20%;
-    text-align: center;
+    border-radius: 0 8px 0 0;
     color: rgb(216, 245, 255);
+    text-align: center;
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
-    font-size: small;
+    font-size: x-small;
     background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }
