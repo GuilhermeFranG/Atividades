@@ -17,8 +17,6 @@ body {
     background-size: cover;
 }
 
-a {text-decoration: none; color: rgb(131, 224, 255);}
-
 img {
     height: 80px;
     width: 160px;
@@ -77,10 +75,11 @@ input, button, select {
 input {
     border: none;
     transition: 0.2s;
+    cursor: pointer;
 }
-input:hover {
+input:focus {
     outline: 2px solid;
-    outline-color: burlywood;
+    outline-color: #f5f5f5;
     background-color: rgb(224, 25, 25);
 }
 
@@ -94,19 +93,11 @@ input[type="radio"] {
     margin-top: 5%;
     outline: none;
 }
-input[type="radio"]:hover {
-    cursor: pointer;
-}
 
 input[type="date"] {
     width: 25%;
     padding: 6px;
     transition: 0.2s;
-}
-input[type="date"]:hover {
-    cursor: pointer;
-    background-color: rgb(224, 25, 25);
-    color: whitesmoke;
 }
 
 input[type="file"] {
@@ -115,11 +106,6 @@ input[type="file"] {
     padding: 13px;
     width: 100%;
     transition: 0.2s;
-}
-input[type="file"]:hover {
-    cursor: pointer;
-    color: whitesmoke;
-    border: none;
 }
 
 label {text-shadow: 1px 1px 3px black;}
@@ -153,6 +139,7 @@ select {
     width: 50%;
     margin-bottom: 5%;
     transition: 0.4s;
+    cursor: pointer;
 }
 select:hover {
     background-color: rgb(224, 25, 25);
@@ -161,17 +148,10 @@ select:hover {
 }
 
 
-::-webkit-input-placeholder {color: rgb(224, 25, 25);}
-:-moz-placeholder {color: rgb(224, 25, 25);}
-::-moz-placeholder {color: rgb(224, 25, 25);}
-:-ms-input-placeholder {color: rgb(224, 25, 25);}
-
-
 
 
 footer {
-    margin-top: 8vh;
-    padding: 2vh 0 2vh;
+    padding: 1vh 0 1vh;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -179,6 +159,10 @@ footer {
     text-align: center;
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
-    font-size: small;
+    font-size: x-small;
     background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }

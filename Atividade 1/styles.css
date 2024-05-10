@@ -13,8 +13,6 @@ body {
     background-color: wheat;
 }
 
-a {text-decoration: none; color: rgb(131, 224, 255);}
-
 img {
     width: 15px;
     height: 12px;
@@ -99,7 +97,7 @@ main {
 
 
 footer {
-    padding: 2vh 0 2vh;
+    padding: 1vh 0 1vh;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -107,6 +105,10 @@ footer {
     text-align: center;
     text-shadow: 1px 2px 2px darkblue;
     font-weight: bolder;
-    font-size: small;
+    font-size: x-small;
     background-image: linear-gradient(to right, #225f96,#0088ff,#225f96);
+}
+footer a {
+    text-decoration: none; 
+    color: rgb(131, 224, 255);
 }
